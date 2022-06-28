@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="302.0" style="-fx-background-color: #696969;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pogoda.Controller">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="59.0" prefWidth="303.0" style="-fx-background-color: black;">
+         <children>
+            <Text fill="WHITE" layoutX="19.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПОГОДА СЕЙЧАС" textAlignment="CENTER" wrappingWidth="265.13671875">
+               <font>
+                  <Font name="Verdana Bold" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="cityId" layoutX="58.0" layoutY="72.0" prefHeight="36.0" prefWidth="186.0" promptText="ВВЕДИТЕ ГОРОД" style="-fx-background-color: #696969; -fx-border-color: white; -fx-border-radius: 8;">
+         <font>
+            <Font name="Verdana Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="GetData" layoutX="86.0" layoutY="124.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: #A9A9A9;" text="УЗНАТЬ ПОГОДУ" textAlignment="CENTER">
+         <font>
+            <Font name="Verdana Bold" size="11.0" />
+         </font>
+      </Button>
+      <Text fx:id="info" fill="SILVER" layoutX="14.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Информация:" wrappingWidth="201.13671875">
+         <font>
+            <Font name="Verdana Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_info" fill="SILVER" layoutX="14.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Температура:" wrappingWidth="237.13671875">
+         <font>
+            <Font name="Verdana Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_max" fill="SILVER" layoutX="13.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Максимум:" wrappingWidth="237.13671875">
+         <font>
+            <Font name="Verdana Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_feel" fill="SILVER" layoutX="13.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ощущается:" wrappingWidth="237.13671875">
+         <font>
+            <Font name="Verdana Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_min" fill="SILVER" layoutX="13.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Минимум:" wrappingWidth="237.13671875">
+         <font>
+            <Font name="Verdana Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_press" fill="SILVER" layoutX="13.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Давление:" wrappingWidth="237.13671875">
+         <font>
+            <Font name="Verdana Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_humidity" fill="SILVER" layoutX="13.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Влажность:" wrappingWidth="237.13671875">
+         <font>
+            <Font name="Verdana Bold" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
